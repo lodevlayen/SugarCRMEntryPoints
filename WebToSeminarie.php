@@ -89,7 +89,7 @@ $deelname->assigned_user_id = 1;
 $deelname->save();
 $deelname->load_relationship('sem01_seminaries');
 $deelname->sem01_seminaries->add($seminarie_name->id);
-$deelname->load_relationship('Contacts');
+$deelname->load_relationship('contacts');
 $deelname->contacts->add($contact->id);
 
 ?>
