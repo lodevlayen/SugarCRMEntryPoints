@@ -2,11 +2,10 @@
 
 /*********************************************************************************
 * This code was developed by:
-* Audox Ingeniería Ltda.
+* LV Consulting
 * You can contact us at:
-* Web: www.audox.cl
-* Email: info@audox.cl
-* Skype: audox.ingenieria
+* Web: www.lvlayen-consulting.com
+* Email: info@lvlayen-consulting.com
 ********************************************************************************/
 
 $manifest = array(
