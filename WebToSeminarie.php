@@ -31,19 +31,19 @@ $seminarie_name = $_REQUEST['seminarie_name'];
 //$opportunity_amount = $_REQUEST['opportunity_amount'];
 
 // Search account by url domain and Update it or Create it
-//$account = new Account();
-//if(!is_null($account->retrieve_by_string_fields(array('name' => $account_name)))){
-//	if(empty($account->name)) $account->name = $account_name;
-//	if(empty($account->website)) $account->website = $account_website;
-//	if(empty($account->assigned_user_id)) $account->assigned_user_id = 1;
-//	$account->save();
-//}
-//else{
-//	$account->name = $account_name;
-//	$account->website = $account_website;
-//	$account->assigned_user_id = 1;
-//	$account->save();
-//}
+$account = new Account();
+if(!is_null($account->retrieve_by_string_fields(array('name' => $account_name)))){
+	if(empty($account->name)) $account->name = $account_name;
+	if(empty($account->website)) $account->website = $account_website;
+	if(empty($account->assigned_user_id)) $account->assigned_user_id = 1;
+	$account->save();
+}
+else{
+	$account->name = $account_name;
+	$account->website = $account_website;
+	$account->assigned_user_id = 1;
+	$account->save();
+}
 
 // Search contact by email and Update it or Create it
 $query = "SELECT contacts.id FROM contacts WHERE contacts.deleted=0 AND contacts.id IN (
