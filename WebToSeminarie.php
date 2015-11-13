@@ -72,7 +72,7 @@ else{
 }
 
 // Search seminarie by name and Update it or Create it
-// Add contact to 'Deelnames'
+// Create 'Deelnames' and Add contact 
 $seminarie = new sem01_seminaries();
 if(!is_null($seminarie->retrieve_by_string_fields(array('name' => $seminarie_name)))){
 	if(empty($seminarie->name)) $seminarie->name = $seminarie_name;
@@ -83,9 +83,10 @@ else{
 	$seminarie->assigned_user_id = 1;
 	$seminarie->save();
 }
+
 $deelname = new sem01_deelnames();
-$seminarie->assigned_user_id = 1;
-$seminarie->save();
+$deelname->assigned_user_id = 1;
+$deelname->save();
 $deelname->load_relationship('sem01_seminaries');
 $deelname->sem01_seminaries->add($seminarie_name->id);
 $deelname->load_relationship('Contacts');
