@@ -2,7 +2,7 @@
 
 /*********************************************************************************
 * This code was developed by:
-* Audox Ingeniería Ltda.
+* Audox IngenierÃ­a Ltda.
 * You can contact us at:
 * Web: www.audox.cl
 * Email: info@audox.cl
@@ -23,9 +23,9 @@ $manifest = array(
 	),
 	'is_uninstallable' => true,
 	'name' => 'Custom EntryPoints',
-	'author' => 'Audox Ingenieria Ltda',
+	'author' => 'LV Consulting',
 	'description' => 'Custom EntryPoints',
-	'published_date' => '2015/09/12',
+	'published_date' => '2015/11/15',
 	'version' => 'v1.0',
 	'type' => 'module',
 );
@@ -36,6 +36,10 @@ $installdefs = array(
 			'from' => '<basepath>/WebToOpportunity.php',
 			'to' => 'custom/WebToOpportunity.php',
 		),
+		array(
+			'from' => '<basepath>/WebToSeminarie.php',
+			'to' => 'custom/WebToSeminarie.php',
+		),		
 		array(
 			'from' => '<basepath>/AccountOpportunitiesChart.php',
 			'to' => 'custom/AccountOpportunitiesChart.php',
