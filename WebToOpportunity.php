@@ -8,7 +8,7 @@
 * Email: info@lvlayen-consulting.com
 ********************************************************************************/
 
-// http://<your-crm-url>/index.php?entryPoint=WebToOpportunity&account_name=Audox Ingeniería Ltda.&account_website=www.audox.cl&contact_first_name=Javier&contact_last_name=Núñez&contact_email=janunez@audox.cl&contact_mobile=+56 9 9675 0572&opportunity_name=CRM Consulting Services&opportunity_amount=2000
+// http://crm.vigc.be/index.php?entryPoint=WebToOpportunity&account_name=Audox Ingeniería Ltda.&account_website=www.audox.cl&contact_first_name=Javier&contact_last_name=Núñez&contact_email=janunez@audox.cl&contact_mobile=+56 9 9675 0572&opportunity_name=CRM Consulting Services&opportunity_amount=2000
 
 if(!defined('sugarEntry')) define('sugarEntry', true);
 
