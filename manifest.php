@@ -10,15 +10,16 @@
 
 $manifest = array(
 	'acceptable_sugar_flavors' => array(
-		'CE',
-		'PRO',
-		'ENT',
-		'CORP',
-		'ULT',
+		0 => 'CE',
 	),
 	'acceptable_sugar_versions' => array(
-		'6.*.*',
-		'7.*.*',
+		'exact_matches' => array(
+		0 => '6.5.20',
+		1 => '6.5.21',
+		2 => '6.5.22',
+		),
+		'regex_matches' => array(
+		),
 	),
 	'is_uninstallable' => true,
 	'name' => 'Custom EntryPoints',
