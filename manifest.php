@@ -52,5 +52,3 @@ $installdefs = array(
 			),
 		),
 );
-
-?>
