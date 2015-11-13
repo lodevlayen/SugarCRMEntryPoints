@@ -27,8 +27,8 @@ $contact_last_name = $_REQUEST['contact_last_name'];
 $contact_email = $_REQUEST['contact_email'];
 $contact_mobile = $_REQUEST['contact_mobile'];
 
-$opportunity_name = $_REQUEST['opportunity_name'];
-$opportunity_amount = $_REQUEST['opportunity_amount'];
+$seminarie_name = $_REQUEST['opportunity_name'];
+//$opportunity_amount = $_REQUEST['opportunity_amount'];
 
 // Search account by url domain and Update it or Create it
 //$account = new Account();
@@ -72,16 +72,12 @@ else{
 	$contact->accounts->add($account->id);
 }
 
-// Create the Opportunity
-$opportunity = new Opportunity();
-$opportunity->name = $opportunity_name;
-$opportunity->amount = $opportunity_amount;
-$opportunity->date_closed = $timeDate->getNow(true)->asDbDate();
-$opportunity->sales_stage = "Closed Won";
-$opportunity->account_id = $account->id;
-$opportunity->assigned_user_id = 1;
-$opportunity->save();
-$opportunity->load_relationship('contacts');
-$opportunity->contacts->add($contact->id);
+// Create Seminarie if it doesn't exist
+$seminarie = new Seminarie();
+$seminarie->name = $seminarie_name;
+$seminarie->assigned_user_id = 1;
+$seminarie->save();
+$seminarie->load_relationship('deelnames');
+$seminarie->deelnames->add($contact->id);
 
 ?>
