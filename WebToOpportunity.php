@@ -2,14 +2,13 @@
 
 /*********************************************************************************
 * This code was developed by:
-* Audox Ingeniería Ltda.
+* LV Consulting
 * You can contact us at:
-* Web: www.audox.cl
-* Email: info@audox.cl
-* Skype: audox.ingenieria
+* Web: www.lvlayen-consulting.com
+* Email: info@lvlayen-consulting.com
 ********************************************************************************/
 
-// http://<your-crm-url>/index.php?entryPoint=WebToOpportunity&account_name=Audox Ingeniería Ltda.&account_website=www.audox.cl&contact_first_name=Javier&contact_last_name=Núñez&contact_email=janunez@audox.cl&contact_mobile=+56 9 9675 0572&opportunity_name=CRM Consulting Services&opportunity_amount=2000
+// http://<your-crm-url>/index.php?entryPoint=WebToOpportunity&account_name=Audox IngenierÃ­a Ltda.&account_website=www.audox.cl&contact_first_name=Javier&contact_last_name=NÃºÃ±ez&contact_email=janunez@audox.cl&contact_mobile=+56 9 9675 0572&opportunity_name=CRM Consulting Services&opportunity_amount=2000
 
 if(!defined('sugarEntry')) define('sugarEntry', true);
 
