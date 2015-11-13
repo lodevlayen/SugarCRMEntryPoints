@@ -18,8 +18,8 @@ $manifest = array(
 		'ULT',
 	),
 	'acceptable_sugar_versions' => array(
-		'6*',
-		'7*',
+		'6.*.*',
+		'7.*.*',
 	),
 	'is_uninstallable' => true,
 	'name' => 'Custom EntryPoints',
@@ -31,6 +31,7 @@ $manifest = array(
 );
 
 $installdefs = array(
+	'id' => 'customentrypoints'
 	'copy' => array(
 		array(
 			'from' => '<basepath>/WebToOpportunity.php',
