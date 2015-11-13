@@ -20,7 +20,7 @@ $timeDate = new TimeDate();
 $current_user->id = 1;
 
 $account_name = $_REQUEST['account_name'];
-$account_website = $_REQUEST['account_website'];
+//$account_website = $_REQUEST['account_website'];
 
 $contact_first_name = $_REQUEST['contact_first_name'];
 $contact_last_name = $_REQUEST['contact_last_name'];
@@ -33,13 +33,13 @@ $seminarie_name = $_REQUEST['seminarie_name'];
 $account = new Account();
 if(!is_null($account->retrieve_by_string_fields(array('name' => $account_name)))){
 	if(empty($account->name)) $account->name = $account_name;
-	if(empty($account->website)) $account->website = $account_website;
+//	if(empty($account->website)) $account->website = $account_website;
 	if(empty($account->assigned_user_id)) $account->assigned_user_id = 1;
 	$account->save();
 }
 else{
 	$account->name = $account_name;
-	$account->website = $account_website;
+//	$account->website = $account_website;
 	$account->assigned_user_id = 1;
 	$account->save();
 }
