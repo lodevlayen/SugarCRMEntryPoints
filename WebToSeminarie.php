@@ -72,7 +72,7 @@ else{
 	$contact->accounts->add($account->id);
 }
 
-// Create Seminarie if it doesn't exist
+// Create Seminarie if it doesn't exist and add contact to 'Deelnames'
 $seminarie = new Seminarie();
 $seminarie->name = $seminarie_name;
 $seminarie->assigned_user_id = 1;
