@@ -27,7 +27,7 @@ $contact_last_name = $_REQUEST['contact_last_name'];
 $contact_email = $_REQUEST['contact_email'];
 $contact_mobile = $_REQUEST['contact_mobile'];
 
-$seminarie_name = $_REQUEST['opportunity_name'];
+$seminarie_name = $_REQUEST['seminarie_name'];
 //$opportunity_amount = $_REQUEST['opportunity_amount'];
 
 // Search account by url domain and Update it or Create it
